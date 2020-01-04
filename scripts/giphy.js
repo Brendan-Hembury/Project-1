@@ -17,6 +17,7 @@ $("button").on("click", function () {
 				var image = $("<img>");
 				image.attr("src", results[i].images.original_still.url);
 				image.attr("alt", "image of " + search);
+				image.attr("data-image", results[i].images.original_still.url)
 				originalImgDiv.prepend(image);
 
 				$("#original-image").prepend(originalImgDiv);
