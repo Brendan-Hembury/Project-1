@@ -4,7 +4,7 @@ $("#original-image").on("click", "img", function () {
 
 	imageURL = $(this).attr("src");
 
-	var transformURL = "https://process.filestackapi.com/" + apiKey + "/ascii=colored:true,background:black/" + imageURL;
+	var transformURL = "https://process.filestackapi.com/" + apiKey + "/ascii=colored:true,background:black,size:50,reverse:true/" + imageURL;
 	$.ajax({
 		url: transformURL,
 		method: "GET"
