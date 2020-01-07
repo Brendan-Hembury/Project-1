@@ -1,8 +1,8 @@
 $("form").on("submit", function () {
 	event.preventDefault();
-	var search = $("#image-search").val();
+	var search = $("#search").val();
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-		search + "&api_key=0MjmS6h9ogtPWtK6B3SV3vVy1PfZbR9y&limit=1";
+		search + "&api_key=0MjmS6h9ogtPWtK6B3SV3vVy1PfZbR9y&limit=10";
 
 	$.ajax({
 		url: queryURL,
@@ -10,7 +10,7 @@ $("form").on("submit", function () {
 	})
 		.then(function (response) {
 			var results = response.data;
-
+			$("#original-image").empty();
 			for (var i = 0; i < results.length; i++) {
 				var originalImgDiv = $("<div>");
 
