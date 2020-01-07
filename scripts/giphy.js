@@ -1,4 +1,4 @@
-$("button").on("click", function () {
+$("form").on("submit", function () {
 	event.preventDefault();
 	var search = $("#image-search").val();
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
