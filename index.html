@@ -6,12 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 
 </head>
 
 <body>
+	<main>
+		<nav>
+			<div class="nav-wrapper">
+			  <form>
+				<div class="input-field">
+				  <input id="search" type="search" required>
+				  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+				  <i class="material-icons">close</i>
+				</div>
+			  </form>
+			</div>
+		  </nav>
+	<div class="container">
 	<form action="submit">
 
 		<input type="text" id="image-search">
@@ -28,6 +42,15 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="scripts/giphy.js"></script>
 	<script src="scripts/filestack.js"></script>
+</div>
+</main>
+<footer class="page-footer red lighten-3">
+	<div class="container">
+		<div class="row"></div>
+		<div class="col 16 s12"></div>
+		<h5 class="white-text">Image to text converter</h5>
+	</div>
+</footer>
 </body>
 
 </html>
