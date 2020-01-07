@@ -9,8 +9,11 @@ $("#original-image").on("click", "img", function () {
 		url: transformURL,
 		method: "GET"
 	})
-		.then(function (response) {
-			console.log(response);
+		.then(function (image) {
+			var imgString = JSON.stringify(image);
+			var imgDisp = imgString.replace(/\"|\\|<html>|<\/html>|<body>|<\/body>|<head>|<\/head>|<body style="background: #000000">|<body style=\"background: #000000\">/ig, "");
+
+			$("#text-image").html(imgDisp);
 			// var results = response.data;
 
 			// for (var i = 0; i < results.length; i++) {
