@@ -11,7 +11,7 @@ $("#original-image").on("click", "img", function () {
 	})
 		.then(function (image) {
 			var imgString = JSON.stringify(image);
-			var imgDisp = imgString.replace(/<html>|<\/html>|<body>|<\/body>|<head>|<\/head>|<body style="background: #000000">|<body style=\"background: #000000\">/ig, "");
+			var imgDisp = imgString.replace(/\"|\\|<html>|<\/html>|<body>|<\/body>|<head>|<\/head>|<body style="background: #000000">|<body style=\"background: #000000\">/ig, "");
 
 			$("#text-image").html(imgDisp);
 			// var results = response.data;
