@@ -11,9 +11,10 @@ $("form").on("submit", function () {
 		.then(function (response) {
 			var results = response.data;
 			$("#original-image").empty();
+			$("#text-image").empty();
 			for (var i = 0; i < results.length; i++) {
 				var originalImgDiv = $("<div>");
-				originalImgDiv.attr("class", "col s12 l4")
+				originalImgDiv.attr("class", "col s12 m4 l3")
 				var image = $("<img>");
 				image.attr("src", results[i].images.fixed_width_still.url);
 				image.attr("alt", "image of " + search);
@@ -22,7 +23,10 @@ $("form").on("submit", function () {
 				convert.attr("class", "btn grey");
 				convert.attr("data-image", results[i].images.fixed_width_still.url);
 				convert.text("Convert to ASCII Art");
-				originalImgDiv.prepend(image, convert);
+				var card = $("<div>");
+				card.attr("class", "align-center");
+				card.prepend(image, convert);
+				originalImgDiv.prepend(card);
 
 				$("#original-image").prepend(originalImgDiv);
 			}

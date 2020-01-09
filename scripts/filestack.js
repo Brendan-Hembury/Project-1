@@ -19,9 +19,11 @@ function display() {
 $("#original-image").on("click", "img", function () {
 	imageURL = $(this).attr("data-image");
 	display();
+	$("#original-image").empty();
 });
 
 $("#original-image").on("click", "button", function () {
 	imageURL = $(this).attr("data-image");
 	display();
+	$("#original-image").empty();
 });
