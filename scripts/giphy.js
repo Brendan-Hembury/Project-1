@@ -13,11 +13,11 @@ $("form").on("submit", function () {
 			$("#original-image").empty();
 			for (var i = 0; i < results.length; i++) {
 				var originalImgDiv = $("<div>");
-
+				originalImgDiv.attr("class", "col s12 l4")
 				var image = $("<img>");
-				image.attr("src", results[i].images.original_still.url);
+				image.attr("src", results[i].images.fixed_width_still.url);
 				image.attr("alt", "image of " + search);
-				image.attr("data-image", results[i].images.original_still.url)
+				image.attr("data-image", results[i].images.fixed_width_still.url);
 				originalImgDiv.prepend(image);
 
 				$("#original-image").prepend(originalImgDiv);
