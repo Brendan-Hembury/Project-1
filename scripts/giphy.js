@@ -18,7 +18,11 @@ $("form").on("submit", function () {
 				image.attr("src", results[i].images.fixed_width_still.url);
 				image.attr("alt", "image of " + search);
 				image.attr("data-image", results[i].images.fixed_width_still.url);
-				originalImgDiv.prepend(image);
+				var convert = $("<button>");
+				convert.attr("class", "btn grey");
+				convert.attr("data-image", results[i].images.fixed_width_still.url);
+				convert.text("Convert to ASCII Art");
+				originalImgDiv.prepend(image, convert);
 
 				$("#original-image").prepend(originalImgDiv);
 			}
