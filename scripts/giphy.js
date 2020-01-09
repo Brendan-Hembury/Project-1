@@ -12,6 +12,7 @@ $("form").on("submit", function () {
 			var results = response.data;
 			$("#original-image").empty();
 			$("#text-image").empty();
+			$("#search-container").attr("class", "container grey darken-3");
 			for (var i = 0; i < results.length; i++) {
 				var originalImgDiv = $("<div>");
 				originalImgDiv.attr("class", "col s12 m4 l3")
