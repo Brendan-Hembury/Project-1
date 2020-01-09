@@ -18,14 +18,21 @@ $("form").on("submit", function () {
 				var image = $("<img>");
 				image.attr("src", results[i].images.fixed_width_still.url);
 				image.attr("alt", "image of " + search);
+				image.attr("class", "hoverable")
 				image.attr("data-image", results[i].images.fixed_width_still.url);
 				var convert = $("<button>");
-				convert.attr("class", "btn grey");
+				convert.attr("class", "btn transparent left");
 				convert.attr("data-image", results[i].images.fixed_width_still.url);
-				convert.text("Convert to ASCII Art");
+				convert.html("<mark class='grey lighten-3'>Convert to Art</mark>");
+				var span = $("<span>").attr("class", "card-title left");
+				span.append(convert);
+
+				var cardImg = $("<div>");
+				cardImg.attr("class", "card-image");
+				cardImg.append(image, span);
 				var card = $("<div>");
-				card.attr("class", "align-center");
-				card.prepend(image, convert);
+				card.attr("class", "card grey darken-3");
+				card.prepend(cardImg);
 				originalImgDiv.prepend(card);
 
 				$("#original-image").prepend(originalImgDiv);
