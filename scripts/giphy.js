@@ -31,7 +31,7 @@ $("form").on("submit", function () {
 				cardImg.attr("class", "card-image");
 				cardImg.append(image, span);
 				var card = $("<div>");
-				card.attr("class", "card grey darken-3");
+				card.attr("class", "card grey darken-3 image-height");
 				card.prepend(cardImg);
 				originalImgDiv.prepend(card);
 
