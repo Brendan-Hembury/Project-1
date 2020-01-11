@@ -1,4 +1,4 @@
-$("form").on("submit", function () {
+$("#gif-search").on("submit", function () {
 	event.preventDefault();
 	var search = $("#search").val();
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -12,7 +12,7 @@ $("form").on("submit", function () {
 			var results = response.data;
 			$("#original-image").empty();
 			$("#text-image").empty();
-			$("#search-container").attr("class", "container grey darken-3");
+			$("#search-container").attr("class", "container grey darken-3 section");
 			for (var i = 0; i < results.length; i++) {
 				var originalImgDiv = $("<div>");
 				originalImgDiv.attr("class", "col s12 m4 l3")
