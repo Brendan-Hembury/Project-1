@@ -15,5 +15,18 @@ body {
 	
 	.image-height{
 		height: 300px;
-	}
+  }
+  .image-style{
+    border-radius: 8px;
+  }
+  .text-style{
+    overflow: auto;
+  }
+  .centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
 

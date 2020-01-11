@@ -19,7 +19,7 @@ $("#gif-search").on("submit", function () {
 				var image = $("<img>");
 				image.attr("src", results[i].images.fixed_width_still.url);
 				image.attr("alt", "image of " + search);
-				image.attr("class", "hoverable responsive-img")
+				image.attr("class", "hoverable responsive-img image-style")
 				image.attr("data-image", results[i].images.fixed_width_still.url);
 				// var convert = $("<button>");
 				// convert.attr("class", "btn transparent left");
