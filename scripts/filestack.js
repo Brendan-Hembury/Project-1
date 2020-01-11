@@ -27,3 +27,9 @@ $("#original-image").on("click", "button", function () {
 	display();
 	$("#original-image").empty();
 });
+
+$("#img-url").on("submit", function () {
+	event.preventDefault();
+	imageURL = $("#url-input").val();
+	display();
+});
