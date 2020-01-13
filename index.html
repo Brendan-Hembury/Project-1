@@ -20,6 +20,7 @@
 				<div class="nav-wrapper blue-grey">
 
 					<a href="#" class="brand-logo">Image to ASCII Art</a>
+					<a href="#" data-target="responsive-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="gif.html">GIF Search</a></li>
@@ -27,7 +28,13 @@
 					</ul>
 				</div>
 			</nav>
+			
 		</div>
+		<ul class="sidenav" id="responsive-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gif.html">GIF Search</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
 		<div class="hide" id="search-container">
 			<div class="row section">
 				<!-- <div class="col m2"></div> -->
@@ -49,8 +56,12 @@
 
 			<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 				integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 			<script src="scripts/giphy.js"></script>
 			<script src="scripts/filestack.js"></script>
+			<script>$(document).ready(function(){
+				$('.sidenav').sidenav();
+			  });</script>
 		</div>
 	</main>
 	<footer class="page-footer blue-grey">
