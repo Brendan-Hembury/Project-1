@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ASCII Art Converter</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<title>ASCII Art Converter</title>
+  <body>
+    <main class="blue-grey lighten-1">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper blue-grey">
+            <a href="#" class="brand-logo">Image to ASCII Art</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gif.html">GIF Search</a></li>
+              <li class="active"><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container grey darken-3 section">
+        <div class="row section">
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/julie.jpg" alt="Julie Theriault" />
+                <span class="card-title">Julie Theriault</span>
+              </div>
+              <div class="card-content">
+                <h6>Role: API Integration</h6>
+                <p>
+                  I graduated from Brigham Young University in 2011. After
+                  graduation I took a job at a local market research firm, where
+                  I am currently Lead Programmer.
+                </p>
+              </div>
+              <div class="card-action">
+                <a
+                  href="https://juliet2319.github.io/personal-portfolio/"
+                  class="blue-grey-text"
+                  >Julie's Portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/dalton.jpg" alt="Dalton Earl" />
+                <span class="card-title">Dalton Earl</span>
+              </div>
+              <div class="card-content">
+                <h6>Role: Frontend Development</h6>
+                <p>
+                  I have worked in a warehouse and in construction for the last
+                  three years and I'm excited to learn the skills to become a
+                  full stack developer.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="blue-grey-text">Dalton's Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="images/brendan.JPG" alt="Brendan Hembury" />
+                <span class="card-title">Brendan Hembury</span>
+              </div>
+              <div class="card-content">
+                <h6>Role: QA</h6>
+                <p>
+                  Hi my name is Brendan, I have been a diesel and heavy
+                  equipment mechanic for the last 6 years. I am currently
+                  learning a new skill in coding.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="blue-grey-text">Brendan's Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</head>
-
-<body>
-	<main class="blue-grey lighten-1">
-		<div class="navbar-fixed">
-
-			<nav>
-				<div class="nav-wrapper blue-grey">
-
-					<a href="#" class="brand-logo">Image to ASCII Art</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="gif.html">GIF Search</a></li>
-						<li class="active"><a href="about.html">About Us</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<div class="container grey darken-3 section">
-			<div class="row section">
-				<div class="col s12 m4">
-					<div class="card">
-						<div class="card-image">
-							<img src="images/julie.jpg" alt="Julie Theriault">
-							<span class="card-title">Julie Theriault</span>
-						</div>
-						<div class="card-content">
-							<h6>Role: Backend Development</h6>
-							<p>I graduated from Brigham Young University in 2011. After graduation I took a job at a local market
-								research firm, where I am currently Lead Programmer.</p>
-						</div>
-						<div class="card-action">
-							<a href="https://juliet2319.github.io/portfolio-bootstrap/" class="blue-grey-text">Julie's Portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4">
-					<div class="card">
-						<div class="card-image">
-							<img src="images/dalton.jpg" alt="Dalton Earl">
-							<span class="card-title">Dalton Earl</span>
-						</div>
-						<div class="card-content">
-							<h6>Role: Frontend Development</h6>
-							<p>I have worked in a warehouse and in construction for the last three years and I'm excited to learn the skills to 
-								become a full stack developer.
-							</p>
-						</div>
-						<div class="card-action">
-							<a href="#" class="blue-grey-text">Dalton's Portfolio</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4">
-					<div class="card">
-						<div class="card-image">
-							<img src="images/brendan.JPG" alt="Brendan Hembury">
-							<span class="card-title">Brendan Hembury</span>
-						</div>
-						<div class="card-content">
-							<h6>Role: QA</h6>
-							<p>Hi my name is Brendan, I have been a diesel and heavy equipment mechanic for the last 6 years. I am currently learning a new skill in coding.</p>
-						</div>
-						<div class="card-action">
-							<a href="#" class="blue-grey-text">Brendan's Portfolio</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="scripts/giphy.js"></script>
-		<script src="scripts/filestack.js"></script>
-
-	</main>
-	<footer class="page-footer blue-grey">
-		<div class="container">
-			<h6 class="white-text brand-logo center">Ⓒ2020</h6>
-		</div>
-	</footer>
-</body>
-
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="scripts/giphy.js"></script>
+      <script src="scripts/filestack.js"></script>
+    </main>
+    <footer class="page-footer blue-grey">
+      <div class="container">
+        <h6 class="white-text brand-logo center">Ⓒ2020</h6>
+      </div>
+    </footer>
+  </body>
 </html>
